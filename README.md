@@ -1,10 +1,31 @@
-# Peter Steinberger's Personal Website
+# Sujan P. – Personal Website
 
-This is the source code for my personal website, built with [Astro](https://astro.build) and deployed on [Vercel](https://vercel.com).
+This repository contains the source code for my personal website, built with Astro and deployed on Vercel.
 
 ## About
 
-I'm Peter Steinberger, an iOS developer, entrepreneur, and open source contributor. This website hosts my personal blog and information about my work.
+My name is Sujan P., a Linux Engineer focused on server infrastructure, automation, hosting environments, and production troubleshooting.
+
+I work extensively with:
+
+* Linux server administration
+* Plesk, LiteSpeed, Nginx, Apache
+* MariaDB/MySQL
+* Backup and migration workflows (rsync, SSH-based transfers)
+* DNS, SSL, email configuration
+* Performance tuning and security hardening
+
+This website serves as a central place for:
+
+* Technical articles
+* Infrastructure notes
+* Production incident breakdowns
+* Tooling documentation
+* Practical Linux and hosting references
+
+The goal is clarity, reproducibility, and operational depth.
+
+---
 
 ## Project Structure
 
@@ -23,34 +44,42 @@ I'm Peter Steinberger, an iOS developer, entrepreneur, and open source contribut
 │   ├── styles/          # Global styles and CSS
 │   └── utils/           # Utility functions
 ├── astro.config.mjs     # Astro configuration
-├── vercel.json          # Vercel deployment and CSP configuration
+├── vercel.json          # Vercel deployment configuration
 ├── package.json         # Project dependencies and scripts
 ├── tailwind.config.mjs  # Tailwind CSS configuration
-└── LICENSE              # Dual license (CC BY 4.0 + MIT)
+└── LICENSE              # Licensing information
 ```
+
+---
 
 ## Commands
 
-| Command                | Action                                      |
-| :--------------------- | :------------------------------------------ |
-| `npm install`          | Installs dependencies                       |
-| `npm run dev`          | Starts local dev server at `localhost:4321` |
-| `npm run build`        | Build the production site to `./dist/`      |
-| `npm run preview`      | Preview the build locally, before deploying |
+| Command           | Action                                            |
+| ----------------- | ------------------------------------------------- |
+| `npm install`     | Install project dependencies                      |
+| `npm run dev`     | Start local development server (`localhost:4321`) |
+| `npm run build`   | Build production site to `./dist/`                |
+| `npm run preview` | Preview the production build locally              |
+
+---
 
 ## Deployment
 
-This site is set up for easy deployment on Vercel. Just connect your GitHub repository to Vercel, and it will automatically build and deploy the site when changes are pushed.
+The site is configured for deployment on Vercel.
+
+Connect the GitHub repository to Vercel. Every push to the main branch triggers an automatic build and deployment.
+
+---
 
 ## License
 
-This repository uses dual licensing:
+* **Documentation & Blog Content**: CC BY 4.0
+* **Source Code & Snippets**: MIT License
 
-- **Documentation & Blog Posts**: Licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
-- **Code & Code Snippets**: Licensed under the [MIT License](LICENSE)
+Refer to the LICENSE file for full details.
 
-See the [LICENSE](LICENSE) file for full details.
+---
 
-## Special Thanks
+## Acknowledgment
 
-Special thanks to [Sat Naing](https://github.com/satnaing) for creating the excellent [AstroPaper theme](https://astro-paper.pages.dev/) that served as the foundation for this website. Their thoughtful design and clean architecture made it a joy to build upon.
+The initial structure was inspired by the AstroPaper theme. The clean layout and modular architecture provided a solid foundation, later customized to align with infrastructure-focused technical writing and documentation workflows.
