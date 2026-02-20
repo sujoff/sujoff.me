@@ -82,4 +82,6 @@ Refer to the LICENSE file for full details.
 
 ## Acknowledgment
 
-The initial structure was inspired by the AstroPaper theme. The clean layout and modular architecture provided a solid foundation, later customized to align with infrastructure-focused technical writing and documentation workflows.
+The initial structure was inspired from the [AstroPaper theme](https://astro-paper.pages.dev/) brought you by [Sat Naing](https://github.com/satnaing). The clean layout and modular architecture provided a solid foundation, later customized to align with infrastructure-focused technical writing and documentation workflows.
+
+All thanks to Peter Steinberger, My Idol <3. 

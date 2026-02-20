@@ -31,11 +31,11 @@ interface Site {
 
 // Site configuration
 export const SITE: Site = {
-  website: "https://steipete.me/",
+  website: "https://sujoff.me/",
   author: "Sujan P",
-  profile: "https://steipete.me/about",
+  profile: "https://sujoff.me/about",
   desc: "Linux engineer passionate about open-source. Sharing insights on infrastructure, automation, and system design.",
-  title: "Sujan P",
+  title: "Sujan P.",
   ogImage: "peter-avatar.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
@@ -46,11 +46,11 @@ export const SITE: Site = {
   editPost: {
     enabled: true,
     text: "Edit on GitHub",
-    url: "https://github.com/steipete/steipete.me/edit/main/",
+    url: "https://github.com/sujoff/sujoff.me/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en",
-  timezone: "America/Los_Angeles",
+  timezone: "America/Kathmandu",
 };
 
 export const SITE_TITLE = SITE.title;
