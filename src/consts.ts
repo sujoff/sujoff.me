@@ -36,7 +36,7 @@ export const SITE: Site = {
   profile: "https://sujoff.me/about",
   desc: "Linux engineer passionate about open-source. Sharing insights on infrastructure, automation, and system design.",
   title: "Sujan P.",
-  ogImage: "peter-avatar.jpg",
+  ogImage: "sujan-avatar.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,
@@ -50,7 +50,7 @@ export const SITE: Site = {
   },
   dynamicOgImage: true,
   lang: "en",
-  timezone: "America/Kathmandu",
+  timezone: "Asia/Kathmandu",
 };
 
 export const SITE_TITLE = SITE.title;
@@ -75,8 +75,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: "GitHub",
   },
   {
-    href: "https://twitter.com/sujoff",
-    label: "Twitter",
+    href: "https://x.com/sujoff_",
+    label: "X",
   },
   {
     href: "https://bsky.app/profile/sujoff.me",

@@ -3,7 +3,9 @@ import type { APIRoute } from "astro";
 export const GET: APIRoute = async () => {
   const markdownContent = `# Sujan P (@sujoff)
 
-AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.
+Linux infrastructure from terminal roots to cloud scale.
+Every system change is reproducible, automated, and versioned on GitHub.
+
 
 ## Navigation
 
@@ -14,13 +16,13 @@ AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub
 
 ## Links
 
-- Twitter: [@sujoff](https://twitter.com/0xSimle)
+- X: [@sujoff_](https://x.com/sujoff_)
 - GitHub: [@sujoff](https://github.com/sujoff)
 - Email: devopsujan@gmail.com
 
 ---
 
-*This is the markdown-only version of steipete.me. Visit [steipete.me](https://steipete.me) for the full experience.*`;
+*This is the markdown-only version of sujoff.me. Visit [sujoff.me](https://sujoff.me) for the full experience.*`;
 
   return new Response(markdownContent, {
     status: 200,

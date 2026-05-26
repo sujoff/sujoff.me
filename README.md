@@ -6,7 +6,7 @@ This repository contains the source code for my personal website, built with Ast
 
 My name is Sujan P., a Linux Engineer focused on server infrastructure, automation, hosting environments, and production troubleshooting.
 
-I work extensively with:
+I work on:
 
 * Linux server administration
 * Plesk, LiteSpeed, Nginx, Apache
@@ -15,13 +15,6 @@ I work extensively with:
 * DNS, SSL, email configuration
 * Performance tuning and security hardening
 
-This website serves as a central place for:
-
-* Technical articles
-* Infrastructure notes
-* Production incident breakdowns
-* Tooling documentation
-* Practical Linux and hosting references
 
 The goal is clarity, reproducibility, and operational depth.
 
@@ -54,12 +47,17 @@ The goal is clarity, reproducibility, and operational depth.
 
 ## Commands
 
+`brew install node`
+`brew install pnpm`
+`pnpm add unist-util-visit`
+
+
 | Command           | Action                                            |
 | ----------------- | ------------------------------------------------- |
-| `npm install`     | Install project dependencies                      |
-| `npm run dev`     | Start local development server (`localhost:4321`) |
-| `npm run build`   | Build production site to `./dist/`                |
-| `npm run preview` | Preview the production build locally              |
+| `pnpm install`     | Install project dependencies                      |
+| `pnpm run dev`     | Start local development server (`localhost:4321`) |
+| `pnpm run build`   | Build production site to `./dist/`                |
+| `pnpm run preview` | Preview the production build locally              |
 
 ---
 
@@ -84,4 +82,4 @@ Refer to the LICENSE file for full details.
 
 The initial structure was inspired from the [AstroPaper theme](https://astro-paper.pages.dev/) brought you by [Sat Naing](https://github.com/satnaing). The clean layout and modular architecture provided a solid foundation, later customized to align with infrastructure-focused technical writing and documentation workflows.
 
-All thanks to Peter Steinberger, My Idol <3. 
+All thanks to Peter Steinberger too, My Idol <3

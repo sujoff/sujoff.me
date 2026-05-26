@@ -10,16 +10,9 @@ export const SOCIALS = [
   },
   {
     name: "X",
-    href: "https://x.com/sujoff",
+    href: "https://x.com/sujoff_",
     linkTitle: `${SITE.title} on X`,
     icon: "twitter",
-    active: true,
-  },
-  {
-    name: "BlueSky",
-    href: "https://bsky.app/profile/sujoff.me",
-    linkTitle: `${SITE.title} on BlueSky`,
-    icon: "bluesky",
     active: true,
   },
   {
@@ -44,12 +37,6 @@ export const SHARE_LINKS = [
     href: "https://x.com/intent/post?url=",
     linkTitle: `Share this post on X`,
     icon: "twitter",
-  },
-  {
-    name: "BlueSky",
-    href: "https://bsky.app/intent/compose?text=",
-    linkTitle: `Share this post on BlueSky`,
-    icon: "bluesky",
   },
   {
     name: "LinkedIn",

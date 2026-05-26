@@ -11,14 +11,73 @@ const { noMarginTop = false } = Astro.props;
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
   <Hr noPadding />
-  <div
-    class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4"
-  >
+
+  <div class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4">
     <Socials centered />
     <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <a href="https://github.com/steipete/steipete.me" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
+      <a href="https://github.com/sujoff/sujoff.me" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
         Steal this post ➜ CC BY 4.0 · Code MIT
       </a>
     </div>
   </div>
+
+  <Hr noPadding />
+
+  <div class="py-4 flex justify-center">
+    <a href="https://www.upwork.com/freelancers/sujanp19" target="_blank" rel="noopener noreferrer" class="upwork-pill">
+      <div class="upwork-dot">
+        <img src="https://cdn.simpleicons.org/upwork/white" width="14" height="14" alt="Upwork" />
+      </div>
+      <span class="upwork-text">Available for hire</span>
+      <span class="upwork-divider"></span>
+      <span class="upwork-cta">Upwork ↗</span>
+    </a>
+  </div>
+
 </footer>
+
+<style>
+  .upwork-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    border: 1.5px solid #14a800;
+    border-radius: 99px;
+    padding: 6px 14px 6px 8px;
+    font-size: 13px;
+    transition: background 0.15s, transform 0.15s;
+    white-space: nowrap;
+  }
+  .upwork-pill:hover {
+    background: rgba(20, 168, 0, 0.08);
+    transform: translateY(-1px);
+  }
+  .upwork-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #14a800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .upwork-text {
+    color: inherit;
+    opacity: 0.75;
+    font-size: 12px;
+  }
+  .upwork-divider {
+    width: 1px;
+    height: 14px;
+    background: #14a800;
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+  .upwork-cta {
+    color: #14a800;
+    font-weight: 600;
+    font-size: 12px;
+  }
+</style>
