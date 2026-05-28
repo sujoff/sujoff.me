@@ -10,18 +10,6 @@ const { noMarginTop = false } = Astro.props;
 ---
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
-  <Hr noPadding />
-
-  <div class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4">
-    <Socials centered />
-    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <a href="https://github.com/sujoff/sujoff.me" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
-        Steal this post ➜ CC BY 4.0 · Code MIT
-      </a>
-    </div>
-  </div>
-
-  <Hr noPadding />
 
   <div class="py-4 flex justify-center">
     <a href="https://www.upwork.com/freelancers/sujanp19" target="_blank" rel="noopener noreferrer" class="upwork-pill">
@@ -32,6 +20,17 @@ const { noMarginTop = false } = Astro.props;
       <span class="upwork-divider"></span>
       <span class="upwork-cta">Upwork ↗</span>
     </a>
+  </div>
+
+  <Hr noPadding />
+
+  <div class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4">
+    <Socials centered />
+    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
+      <a href="https://github.com/sujoff/sujoff.me" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
+        Steal this post ➜ CC BY 4.0 · Code MIT
+      </a>
+    </div>
   </div>
 
 </footer>
@@ -64,8 +63,7 @@ const { noMarginTop = false } = Astro.props;
     flex-shrink: 0;
   }
   .upwork-text {
-    color: inherit;
-    opacity: 0.75;
+    color: #9ca3af;
     font-size: 12px;
   }
   .upwork-divider {
