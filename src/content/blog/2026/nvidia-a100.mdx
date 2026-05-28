@@ -1,0 +1,58 @@
+---
+title: "Passing an NVIDIA A100 Through to a KVM VM Using Cockpit"
+description: "Cuda ain't that difficult as it used to be. Nvidia has grown up quite nicely mainly on documentattion <3"
+pubDatetime: 2026-05-28T09:31:00+05:45
+tags: ["gpuu-passthrough", "Nvidia", "cockpit", "kvm", "virtualization"]
+draft: false
+---
+
+I recently worked on configuring full GPU passthrough on a DELL R760 server running Ubuntu with KVM virtualization managed through Cockpit Machines.
+
+The server itself is built for heavy AI and compute workloads:
+
+* Dual Intel Xeon Platinum 8462Y+
+* 128GB DDR5 ECC RAM
+* NVIDIA A100 80GB PCIe GPU
+* Dual 1.92TB enterprise SSDs
+* 100GbE networking
+
+The client required a dedicated Ubuntu 22.04 virtual machine with:
+
+* 24 vCPU
+* 64GB RAM
+* 800GB storage
+* CUDA 12.x support
+* Docker with NVIDIA Container Toolkit
+* Full GPU access to the A100
+
+Instead of using VMware or Proxmox, I used Cockpit with Cockpit Machines on Ubuntu because its faster to setup, clean and lightweight to manage libvirt/KVM from the browser.
+
+The process involved enabling Intel VT-d and IOMMU from BIOS of host server, configuring VFIO on the Ubuntu host, isolating the NVIDIA GPU from the host operating system, and attaching the PCIe device (our main gpu) directly to the VM through Cockpit.
+
+After binding the A100 to `vfio-pci`, the VM was configured using:
+
+* Q35 chipset
+* UEFI/OVMF firmware
+* host-passthrough CPU mode
+* PCI Host Device attachment for the GPU
+
+Inside the VM, I installed NVIDIA datacenter drivers, CUDA 12.x, Docker, and NVIDIA Container Toolkit. The final setup allowed the Ubuntu VM to fully own the A100 GPU with near bare-metal performance.
+
+The result was a stable AI-ready virtual machine capable of running GPU accelerated Docker containers directly inside KVM while still keeping the management layer simple through Cockpit.
+
+I'd suggest you to read these article for better understanding, and installation steps:
+
+----------------------------------
+
+https://wiki.gentoo.org/wiki/GPU_passthrough_with_virt-manager,_QEMU,_and_KVM
+
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/
+
+https://cockpit-project.org/blog/cockpit-247.html
+
+-----------------------------------
+
+Aight, Good luck! 
+
+
+
