@@ -7,6 +7,12 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.sujoff.me" }],
+      "destination": "https://sujoff.me/:path*",
+      "permanent": true
+    },
+    {
       "source": "/:path*.md",
       "has": [{ "type": "host", "value": "sujoff.me" }],
       "missing": [{ "type": "header", "key": "accept", "value": "(?i).*text/markdown.*" }],
@@ -52,17 +58,6 @@
     {
       "source": "/posts/understanding-codebases-with-ai-gemini-workflow",
       "destination": "/posts/2025/understanding-codebases-with-ai-gemini-workflow",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "^(?!(sujoff\\.me|www\\.sujoff\\.me|sujoff\\.md|www\\.sujoff\\.md|.*\\.vercel\\.app|.*\\.friendship\\.dev|.*\\.amantus\\.dev|.*\\.sweetistics\\.com)).*$"
-        }
-      ],
-      "destination": "https://sujoff.me/:path*",
       "permanent": true
     }
   ],
