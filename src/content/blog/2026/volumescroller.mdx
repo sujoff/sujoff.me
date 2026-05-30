@@ -1,0 +1,40 @@
+---
+title: "VolumeScroller: Scroll-Based Volume Control for macOS"
+description: "A tiny menu bar app that lets you control Mac volume just by scrolling over an icon."
+pubDatetime: 2026-05-30T19:10:00+05:45
+tags: ["macos", "swift", "menu-bar", "opensource", "utility"]
+draft: false
+---
+
+I built VolumeScroller because changing volume on macOS still feels slower than it should be for such a basic action.
+
+The goal was simple: move volume control to a tiny menu bar utility where scroll gestures are enough for quick adjustments.
+
+VolumeScroller is a lightweight macOS app that runs in the menu bar and lets you control system sound naturally:
+
+* Scroll up on the icon to increase volume
+* Scroll down on the icon to decrease volume
+* Left click opens a simple volume slider
+* Right click gives quick options like mute/unmute, launch at login, and quit
+
+I kept it intentionally minimal: no unnecessary extras, no subscription model, no App Store dependency, and no heavy background footprint.
+
+After testing it across daily workflows, I deployed the project publicly so anyone can install it directly from source and use it on Apple Silicon Macs running Ventura or newer.
+
+You can find the full project here:
+
+----------------------------------
+
+https://github.com/sujoff/VolumeScroll
+
+----------------------------------
+
+Quick install command:
+
+`curl -sL https://raw.githubusercontent.com/sujoff/VolumeScroll/main/install.sh | bash`
+
+On first launch, macOS will ask for Accessibility permission so the app can detect scroll events over the menu bar icon.
+
+This one started as a small personal workflow fix, but it turned into a clean little utility that now saves me clicks every day.
+
+If you're on macOS and want volume control to feel instant, give VolumeScroller a try.
